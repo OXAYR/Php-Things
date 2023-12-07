@@ -8,7 +8,7 @@ if (!isset($_SESSION['todoList'])) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $task = $_POST["task"];
-    $_SESSION['todoList'][] = $task;
+    $_SESSION['todoList'] = $task;
 }
 ?>
 <!DOCTYPE html>
